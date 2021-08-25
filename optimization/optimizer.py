@@ -8,7 +8,7 @@ class SGD:
         self.lr = lr
 
     def update(self, params, grads):
-        for key in params.keys():cd 
+        for key in params.keys():cd
             params[key] -= self.lr * grads[key]
 
 # SGD: 최적의 매개변수의 기울기(미분)
