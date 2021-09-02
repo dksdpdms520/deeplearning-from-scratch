@@ -3,15 +3,11 @@ import sys
 sys.path.append('..')
 import numpy as np
 from common import config
-# GPU에서 실행하려면 아래 주석을 해제(CuPy 필요).
-# ===============================================
-# config.GPU = True
-# ===============================================
 import pickle
 from common.trainer import Trainer
 from common.optimizer import Adam
-from cbow import CBOW
-from skip_gram import SkipGram
+from highspeed_word2vec.cbow import CBOW
+from highspeed_word2vec.skip_gram import SkipGram
 from common.util import create_contexts_target, to_cpu, to_gpu
 from dataset import ptb
 

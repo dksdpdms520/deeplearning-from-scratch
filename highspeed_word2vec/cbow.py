@@ -3,7 +3,7 @@ import sys
 sys.path.append('..')
 from common.np import *  # import numpy as np
 from common.layers import Embedding
-from ch04.negative_sampling_layer import NegativeSamplingLoss
+from highspeed_word2vec.negative_sampling_layer import NegativeSamplingLoss
 
 # 단순한 SimpleCBOW 클래스 개선: embedding 계층, negative sampling loss 계층을 적용
 # SimpleCBOW 클래스: 출력 측 가중치는 입력 측 가중치와 다른 형상으로 단어 벡터가 열 방향에 배치
